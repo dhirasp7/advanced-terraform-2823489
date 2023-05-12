@@ -6,9 +6,9 @@ node {
     }
     stage('Download') {
         // Download Terraform
-        sh label: '', script: 'curl https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_linux_amd64.zip \
-            --output terraform_0.12.29_darwin_amd64.zip \
-             && unzip terraform_0.12.29_darwin_amd64.zip'
+        sh label: '', script: 'curl https://releases.hashicorp.com/terraform/1.4.6/terraform_1.4.6_linux_arm64.zip \
+            --output terraform_1.4.6_darwin_amd64.zip \
+            && unzip terraform_1.4.6_darwin_amd64.zip'
     }
     stage('Backend-Init') {
         // Initialize the Terraform configuration
